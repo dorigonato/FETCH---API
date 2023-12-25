@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Cadastro de Produto</title>
+</head>
+<body>
+    <h1>Cadastro de Produto</h1>
+    
+    <label for="nomeProduto">Nome do Produto:</label>
+    <input type="text" id="nomeProduto" required>
+    
+    <label for="valorProduto">Valor:</label>
+    <input type="number" id="valorProduto" required>
+    
+    <label for="descricaoProduto">Descrição:</label>
+    <textarea id="descricaoProduto" required></textarea>
+    
+    <button onclick="cadastrarProduto()">Cadastrar Produto</button>
+    
+    <p id="feedback"></p>
+
+    <hr>
+
+    <h2>Produtos Cadastrados</h2>
+    <ul id="listaProdutos"></ul>
+
+
+</body>
+</html>
